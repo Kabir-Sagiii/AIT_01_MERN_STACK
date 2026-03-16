@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html>
+  <head></head>
+
+  <body>
+    <h1>Forms in HTML</h1>
+    <form>
+      <div>
+        <label for="">username : </label>
+        <input type="text" disabled placeholder="enter username" size="20" />
+      </div>
+
+      <div>
+        <label for="">password : </label>
+        <input
+          type="password"
+          placeholder="enter password"
+          maxlength="10"
+          minlength="4"
+        />
+      </div>
+
+      <div>
+        <label for="">Email</label>
+        <input type="email" required />
+      </div>
+
+      <div>
+        <input type="button" value="login" />
+      </div>
+
+      <div>
+        <input type="radio" checked name="gender" />
+        <label for="">male</label>
+
+        <input type="radio" name="gender" />
+        <label for="">female</label>
+      </div>
+
+      <div>
+        <input type="checkbox" checked id="html" />
+        <label for="html">html</label>
+
+        <input type="checkbox" />
+        <label for="">css</label>
+
+        <input type="checkbox" />
+        <label for="">js</label>
+
+        <input type="checkbox" />
+        <label for="">react</label>
+      </div>
+
+      <div>
+        <input type="file" multiple />
+      </div>
+
+      <div>
+        <input type="date" />
+      </div>
+
+      <div>
+        <input type="time" />
+      </div>
+
+      <div>
+        <select>
+          <option>Select the city</option>
+          <option>hyderaabad</option>
+          <option>pune</option>
+          <option>mumbai</option>
+        </select>
+      </div>
+
+      <div>
+        <textarea rows="10" cols="40"></textarea>
+      </div>
+
+      <div>
+        <input type="text" list="mylist" />
+        <datalist id="mylist">
+          <option>reactjs</option>
+          <option>react</option>
+          <option>react native</option>
+          <option>js</option>
+          <option>html</option>
+        </datalist>
+      </div>
+    </form>
+  </body>
+</html>
