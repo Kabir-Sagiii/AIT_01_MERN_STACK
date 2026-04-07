@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        height: 400px;
+        box-shadow: 0 0 10px black;
+        display: flex;
+      }
+      .flex1,
+      .flex2 {
+        width: 100px;
+        height: 100px;
+        background-color: lightgray;
+        margin: 5px;
+      }
+      .flex1 {
+        background-color: coral;
+        order: 2;
+      }
+      .flex2 {
+        order: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="flex1">1</div>
+      <div class="flex2">2</div>
+    </div>
+  </body>
+</html>

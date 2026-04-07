@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        height: 400px;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .flex1 {
+        background-color: coral;
+        flex-basis: 200px;
+      }
+      .flex2 {
+        background-color: lightgreen;
+      }
+
+      .container-1 {
+        width: 800px;
+        height: 400px;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flex3 {
+        background-color: coral;
+      }
+      .flex4 {
+        background-color: lightgreen;
+        flex-basis: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="flex1">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+      </div>
+      <div class="flex2">Lorem, ipsum dolor.</div>
+    </div>
+
+    <div class="container-1">
+      <div class="flex3">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+      </div>
+      <div class="flex4">Lorem, ipsum dolor.</div>
+    </div>
+  </body>
+</html>

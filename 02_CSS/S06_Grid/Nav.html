@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+      }
+      .nav {
+        height: 90px;
+        box-shadow: 0 0 10px black;
+        display: grid;
+        grid-template-columns: 40% 50% 10%;
+      }
+      .col-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .col-1 h1 {
+        font-size: 52px;
+        color: tomato;
+      }
+      .col-2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .col-2 a {
+        font-size: 18px;
+        color: green;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      .col-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .col-3 button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="col-1">
+        <h1>Dude's - Mart</h1>
+      </div>
+      <div class="col-2">
+        <a href="">Home</a>
+        <a href="">Products</a>
+        <a href="">Profile</a>
+        <a href="">ContactUs</a>
+        <a href="">Admin</a>
+      </div>
+      <div class="col-3">
+        <button>Logout</button>
+      </div>
+    </div>
+  </body>
+</html>

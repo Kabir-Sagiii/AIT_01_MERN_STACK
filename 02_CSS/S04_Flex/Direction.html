@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        height: 500px;
+        box-shadow: 0 0 10px black;
+        margin: 20px;
+      }
+      section {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: black;
+        color: white;
+      }
+      .flexC1 {
+        display: flex;
+      }
+      .flexC2 {
+        display: flex;
+        flex-direction: column;
+      }
+      .flexC3 {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .flexC4 {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container flexC1">
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+    </div>
+
+    <div class="container flexC2">
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+    </div>
+
+    <div class="container flexC3">
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+    </div>
+
+    <div class="container flexC4">
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+    </div>
+  </body>
+</html>

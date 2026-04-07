@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        width: 1000px;
+        height: 500px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .grid-item1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/027/110/402/large_2x/fashion-model-kids-free-photo.jpg");
+        background-size: 100% 100%;
+      }
+      .grid-item2 {
+        background-color: lightgreen;
+        grid-column: 3/5;
+        grid-row: 1/3;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/026/911/393/large_2x/fashion-model-kids-free-photo.jpg");
+        background-size: 100% 100%;
+      }
+      .grid-item3 {
+        background-color: lightsalmon;
+        grid-column: 3/5;
+        grid-row: 3/4;
+        background-image: url("https://media.istockphoto.com/id/1152823474/photo/trendy-children-listening-to-music.jpg?s=612x612&w=0&k=20&c=uA4TK3-oV2GXHh1NZFUvi4mr9kli4VxZQbBSGe_-RKI=");
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid-item1"></div>
+      <div class="grid-item2"></div>
+      <div class="grid-item3"></div>
+    </div>
+  </body>
+</html>
