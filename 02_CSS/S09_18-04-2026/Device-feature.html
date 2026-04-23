@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 800px;
+        height: 400px;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        width: fit-content;
+        box-shadow: 0 0 10px black;
+      }
+
+      @media only screen and (min-width: 300px) and (max-width: 600px) {
+        div {
+          background-color: red;
+          flex-direction: row;
+        }
+      }
+
+      @media only screen and (min-width: 601px) and (max-width: 800px) {
+        div {
+          background-color: green;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Heading 1</h1>
+      <h1>Heading 2</h1>
+      <h1>Heading 3</h1>
+    </div>
+  </body>
+</html>
