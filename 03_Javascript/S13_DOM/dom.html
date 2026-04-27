@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      function changeContent() {
+        // //1. Acccess the DOM Element
+        // var h1DomElement = document.querySelector("h1");
+
+        // var h1DomElement = document.getElementById("title");
+
+        var collection = document.getElementsByClassName("heading");
+
+        var h1DomElement = collection[0];
+        var h1DomElement2 = collection[1];
+
+        //2. change the content using innerText Property
+        h1DomElement.innerText = "Hello Javascript";
+        h1DomElement2.innerText = "Javascript is Amazing";
+
+        //3. change the style
+        h1DomElement.style.color = "red";
+        h1DomElement2.style.color = "green";
+
+        // var count = 0;
+        // for (var key in h1DomElement.style) {
+        //   console.log(key);
+        //   count++;
+        // }
+
+        // console.log(count);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h1 id="title" class="heading">Welcome to DOM</h1>
+      <h1 id="anothertitle" class="heading">Javascript Dom Concept</h1>
+      <button onclick="changeContent()">Submit</button>
+    </div>
+  </body>
+</html>

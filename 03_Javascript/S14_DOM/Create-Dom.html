@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      function createImage() {
+        var imageDomElement = document.createElement("img");
+        imageDomElement.src =
+          "https://codegeekz.com/wp-content/uploads/reactjs.png";
+        imageDomElement.width = "200";
+        imageDomElement.height = "200";
+        imageDomElement.style.margin = "20px";
+
+        imageDomElement.onclick = function () {
+          imageDomElement.remove();
+        };
+
+        var h3DomElement = document.createElement("h3");
+        h3DomElement.innerText = "React JS Image";
+
+        var body = document.querySelector("body");
+        body.appendChild(imageDomElement);
+        body.appendChild(h3DomElement);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Create Image</h1>
+    <button onclick="createImage()">create</button><br /><br />
+  </body>
+</html>
