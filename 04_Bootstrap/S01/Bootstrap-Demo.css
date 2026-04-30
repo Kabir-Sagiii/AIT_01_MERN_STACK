@@ -1,0 +1,7 @@
+.withoutBS {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+}

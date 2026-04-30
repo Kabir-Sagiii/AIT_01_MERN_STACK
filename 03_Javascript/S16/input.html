@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      function getUserName() {
+        const inputDomElement = event.target;
+        var pdomElement = document.querySelector("p");
+
+        var textBoxValue = inputDomElement.value;
+
+        pdomElement.innerText = textBoxValue;
+      }
+
+      function f1() {
+        console.log(event.target);
+      }
+      //   f1();
+    </script>
+  </head>
+  <body>
+    <h1>Event Object</h1>
+    <input type="text" placeholder="username" oninput="getUserName()" />
+    <p style="color: green"></p>
+  </body>
+</html>

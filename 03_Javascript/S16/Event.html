@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      function changeContent(event) {
+        document.querySelector("h1").innerText =
+          "Event Listener and Event HAndler";
+
+        var buttonDom = event.target;
+        buttonDom.style.color = "green";
+        buttonDom.innerText = "Event Concept";
+      }
+
+      function changeStyle(event) {
+        var button = document.querySelector("h1");
+        button.style.backgroundColor = "black";
+        button.style.color = "white";
+      }
+
+      function changeAnotherStyle(event) {
+        var button = document.querySelector("h1");
+        button.style.backgroundColor = "red";
+        button.style.color = "white";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 onmouseenter="" onkeydown="" onload="" ondblclick="">Events in JS</h1>
+    <button
+      onclick="changeContent(event)"
+      onmouseenter="changeStyle(event)"
+      onmouseleave="changeAnotherStyle(event)"
+    >
+      Click me
+    </button>
+  </body>
+</html>
