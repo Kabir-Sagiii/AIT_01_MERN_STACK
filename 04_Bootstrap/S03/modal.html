@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      img {
+        filter: brightness(50%);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <button
+      class="btn btn-outline-primary m-5"
+      data-bs-toggle="modal"
+      data-bs-target="#myModal"
+    >
+      Sign In
+    </button>
+
+    <button
+      class="btn btn-outline-success m-5"
+      data-bs-toggle="modal"
+      data-bs-target="#signup"
+    >
+      Sign Up
+    </button>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-center text-primary">Login Form</h3>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group my-3">
+              <input class="form-control" type="text" placeholder="email id" />
+            </div>
+            <div class="form-group my-3">
+              <input
+                class="form-control"
+                type="password"
+                placeholder="password"
+              />
+            </div>
+            <div class="my-3">
+              <button class="btn w-100 btn-primary">Sign In</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="">Create an Account</a>
+            <a href="">Forgot Password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="signup">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-center text-success">Signup Form</h3>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group my-3">
+              <input class="form-control" type="text" placeholder="email id" />
+            </div>
+            <div class="form-group my-3">
+              <input
+                class="form-control"
+                type="password"
+                placeholder="password"
+              />
+            </div>
+            <div class="form-group my-3">
+              <input
+                class="form-control"
+                type="password"
+                placeholder="confirm password"
+              />
+            </div>
+            <div class="form-group my-3">
+              <input class="form-control" type="text" placeholder="city" />
+            </div>
+            <div class="my-3">
+              <button class="btn w-100 btn-success">Sign Up</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="">Switch to Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
