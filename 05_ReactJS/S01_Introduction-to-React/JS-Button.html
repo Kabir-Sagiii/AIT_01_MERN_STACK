@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head></head>
+
+  <body>
+    <h1>Button in Javascript</h1>
+    <script>
+      function createButton() {
+        var button = document.createElement("button");
+        button.innerText = "Javascript Button";
+
+        button.onclick = function () {
+          var img = document.createElement("img");
+          img.src =
+            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K";
+          img.width = "150";
+          img.height = "150";
+
+          img.onclick = function () {
+            img.remove();
+          };
+          document.querySelector("body").appendChild(img);
+        };
+
+        document.querySelector("body").appendChild(button);
+
+        //ol
+        const ol = document.createElement("ol");
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+
+        li1.innerText = "React JS";
+        li2.innerText = "Node JS";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+
+        document.querySelector("body").appendChild(ol);
+      }
+
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+    </script>
+  </body>
+</html>
