@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      var div = React.createElement("div", null, [
+        React.createElement(
+          "h2",
+          { id: "title", class: "react" },
+          "React Core Developer",
+        ),
+        React.createElement(
+          "p",
+          null,
+          "React JS Developer can create Efficient UI",
+        ),
+        React.createElement("img", {
+          src: "https://static.xx.fbcdn.net/rsrc.php/y0/r/U45qBJmWVHU.webp",
+          width: "300",
+          height: "300",
+        }),
+      ]);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
