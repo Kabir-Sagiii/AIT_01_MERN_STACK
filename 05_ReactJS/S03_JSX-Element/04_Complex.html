@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const myContainer = (
+        <div id="container">
+          <div id="firstDiv">
+            <h2> Ecommerce Categories </h2>
+          </div>
+          <div id="lastDiv">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/03/14/11/41/perfume-2142824_1280.jpg"
+              width="200"
+              height="200"
+            />
+            <h4> perfume </h4>
+          </div>
+        </div>
+      );
+
+      ReactDOM.render(myContainer, document.getElementById("root"));
+    </script>
+  </body>
+</html>

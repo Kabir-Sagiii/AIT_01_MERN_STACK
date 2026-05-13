@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #card-container {
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        padding: 5px;
+        margin: 20px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createCard() {
+        return (
+          <div id="card-container">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/03/14/11/41/perfume-2142824_1280.jpg"
+              width="200"
+              height="200"
+            />
+            <h3> Perfume </h3>
+          </div>
+        );
+      }
+
+      function cardContainer() {
+        return (
+          <div className="container">
+            {createCard()}
+            {createCard()}
+            {createCard()}
+            {createCard()}
+          </div>
+        );
+      }
+
+      ReactDOM.render(cardContainer(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
