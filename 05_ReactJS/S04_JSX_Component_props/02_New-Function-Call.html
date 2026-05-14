@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./02_New-Function-call.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // Functional Component
+      function F1(info) {
+        // info = {title:"React JS"}
+        return (
+          <div className="container">
+            <h1>{info.title}</h1>
+            <p>{info.desc}</p>
+          </div>
+        );
+      }
+      //Functional component
+      function App() {
+        return (
+          <div>
+            <F1
+              title={"React JS"}
+              desc={`React is a popular JavaScript library for building interactive user interfaces. It uses reusable components, virtual DOM, and efficient rendering to create fast, scalable, and dynamic web applications efficiently.
+`}
+            />
+            <F1
+              title={"Node JS"}
+              desc={`Node.js is an open-source JavaScript runtime built on Chrome’s V8 engine. It enables developers to build fast, scalable, server-side applications using asynchronous, event-driven programming for real-time web services efficiently.
+`}
+            />
+            <F1
+              title={"Javascript"}
+              desc={`JavaScript is a versatile scripting language used to create interactive and dynamic web applications. It supports client-side and server-side development, enabling responsive websites, animations, APIs, and real-time functionality across platforms.
+`}
+            >
+              {" "}
+            </F1>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
