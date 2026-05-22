@@ -1,0 +1,13 @@
+.card-container {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  margin: 50px auto;
+}
+.card-container h1 {
+  margin-left: 50px;
+}
+.cards {
+  display: flex;
+
+  justify-content: space-evenly;
+}

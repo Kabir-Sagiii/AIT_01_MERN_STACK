@@ -1,0 +1,38 @@
+#nav {
+  height: 15vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#nav > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav > div > h1 {
+  font-size: 42px;
+  color: tomato;
+  text-shadow: 0 0 2px white;
+}
+#nav > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#nav > div > a {
+  color: blue;
+  margin-right: 50px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+#nav > div > button {
+  padding: 13px 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

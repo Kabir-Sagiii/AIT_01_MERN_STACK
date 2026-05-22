@@ -1,0 +1,23 @@
+<script>
+  function create() {
+    document.querySelector("input").style.backgroundColor = "red";
+    const p = document.createElement("p");
+    p.innerText = "Hello I am PAragraph";
+    document.querySelector("body").appendChild(p);
+
+    p.onclick = function () {
+      p.remove();
+    };
+  }
+</script>
+<style>
+  button {
+    background-color: black;
+    color: white;
+  }
+  input {
+    border: 2px solid red;
+  }
+</style>
+<button onclick="create()">HTML Button</button>
+<input type="text" placeholder="username" />
