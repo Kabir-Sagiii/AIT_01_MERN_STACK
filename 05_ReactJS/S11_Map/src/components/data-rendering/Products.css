@@ -1,0 +1,20 @@
+.products {
+  width: 95%;
+  margin: 50px auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+}
+.product-card {
+  width: 270px;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  border-radius: 10px;
+}
+.product-card h3 {
+  margin: 20px 0px;
+  color: green;
+}
