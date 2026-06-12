@@ -1,0 +1,64 @@
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+}
+
+.hero-card {
+  border-radius: 1.5rem;
+}
+
+.icon-circle {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.section-title {
+  letter-spacing: 0.12em;
+}
+
+.active-plan {
+  background: #ffffff;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.product-hero {
+  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+}
+
+.product-hero-card {
+  border-radius: 1.75rem;
+}
+
+.product-badge {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.product-card {
+  border-radius: 1.25rem;
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+@media (max-width: 991px) {
+  .hero-card {
+    padding: 2rem !important;
+  }
+}

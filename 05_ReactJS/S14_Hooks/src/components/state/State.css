@@ -1,0 +1,33 @@
+.state-container {
+  padding: 20px;
+}
+.state-container h1 {
+  margin-bottom: 20px;
+}
+.image-container {
+  padding: 30px;
+}
+.image-container img {
+  margin-bottom: 20px;
+}
+.image-container button {
+  margin-right: 20px;
+}
+
+.user-card {
+  width: 230px;
+  box-shadow: 0 0 10px black;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+.user-card h3 {
+  margin: 13px;
+}
+.user-card p {
+  margin: 13px;
+}
+.user-card button {
+  margin-right: 10px;
+  padding: 7px 20px;
+}
